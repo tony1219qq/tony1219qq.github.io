@@ -4,51 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tony Lee - Cloud Engineer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="/" class="nav-brand">Tony Lee</a>
-            <ul class="nav-menu">
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="pages/experience.html" class="nav-link">Experience</a></li>
-                <li><a href="pages/certificates.html" class="nav-link">Certifications</a></li>
-                <li><a href="pages/projects.html" class="nav-link">Projects</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Tony Lee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/certificates.html">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <main>
-        <section class="hero section">
-            <div class="container">
-                <h1>Cloud Engineer</h1>
-                <p class="hero__subtitle">Multi-cloud solutions specialist in AWS, Azure, and GCP</p>
-                <a href="/pages/experience.html" class="btn">View My Experience</a>
+    <!-- Hero Section -->
+    <header class="hero-section text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Cloud Engineer</h1>
+                    <p class="lead mb-4">Multi-cloud solutions specialist in AWS, Azure, and GCP</p>
+                    <a href="pages/experience.html" class="btn btn-primary btn-lg">View My Experience</a>
+                </div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <section class="highlights section">
-            <div class="container">
-                <h2>Professional Highlights</h2>
-                <div class="grid">
-                    <div class="highlight-card">
-                        <h3>Multi-Cloud Expert</h3>
-                        <p>Proficient in AWS, Azure, GCP platforms</p>
+    <!-- Highlights Section -->
+    <section class="highlights-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Professional Highlights</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cloud-check fs-1 text-primary mb-3"></i>
+                            <h3 class="card-title">Multi-Cloud Expert</h3>
+                            <p class="card-text">Proficient in AWS, Azure, GCP platforms</p>
+                        </div>
                     </div>
-                    <div class="highlight-card">
-                        <h3>Certifications</h3>
-                        <p>10+ Professional Cloud Certifications</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-award fs-1 text-primary mb-3"></i>
+                            <h3 class="card-title">Certifications</h3>
+                            <p class="card-text">10+ Professional Cloud Certifications</p>
+                        </div>
                     </div>
-                    <div class="highlight-card">
-                        <h3>Achievements</h3>
-                        <p>AWS DeepRacer Championship 2022 Finalist</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-trophy fs-1 text-primary mb-3"></i>
+                            <h3 class="card-title">Achievements</h3>
+                            <p class="card-text">AWS DeepRacer Championship 2022 Finalist</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <script src="js/main.js"></script>
+    <!-- Footer -->
+    <footer class="footer py-4 text-white">
+        <div class="container text-center">
+            <p>&copy; 2025 Tony Lee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

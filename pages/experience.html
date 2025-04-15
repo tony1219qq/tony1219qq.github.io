@@ -4,91 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Tony Lee</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="../" class="nav-brand">Tony Lee</a>
-            <ul class="nav-menu">
-                <li><a href="../" class="nav-link">Home</a></li>
-                <li><a href="experience.html" class="nav-link">Experience</a></li>
-                <li><a href="certificates.html" class="nav-link">Certifications</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="section">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <h1 class="section-title">Work Experience</h1>
-            
-            <div class="card experience-card">
-                <div class="experience-header">
-                    <h2>Cloud Engineer</h2>
-                    <h3>EDNS domains</h3>
-                    <p class="date">June 2023 - 31 December 2024</p>
-                </div>
-                <ul class="experience-list">
-                    <li>
-                        <strong>Cloud Support and Operations</strong>
-                        <ul>
-                            <li>Provided technical support across AWS, Azure, GCP, Alibaba Cloud,Tencent Cloud and Huawei Cloud platforms</li>
-                            <li>Assisted customers with cloud service inquiries, cost estimations, and solution proposals</li>
-                            <li>Helped clients set up various cloud services including CDN, VM provisioning, and basic networking</li>
-                            <li>Monitored and maintained cloud infrastructure for client projects</li>
-                        </ul>
+            <a class="navbar-brand fw-bold" href="../index.html">Tony Lee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
-                    <li>
-                        <strong>Application Development and Infrastructure</strong>
-                        <ul>
-                            <li>Developed automation scripts using Python for routine tasks</li>
-                            <li>Built and maintained Telegram bots for operational notifications</li>
-                            <li>Implemented mail services using solutions like Mail-in-a-Box</li>
-                            <li>Used AWS CDK and CloudFormation for automated resource provisioning</li>
-                            <li>Created scripts using AssumeRole for cross-account automation</li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="experience.html">Experience</a>
                     </li>
-                    <li>
-                        <strong>Customer Solutions</strong>
-                        <ul>
-                            <li>Provided technical consultations and cost estimates for cloud solutions</li>
-                            <li>Helped troubleshoot client issues across multiple cloud platforms</li>
-                            <li>Documented solutions and created technical guides for clients</li>
-                            <li>Assisted in cloud service implementation and configuration</li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certificates.html">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                 </ul>
             </div>
+        </div>
+    </nav>
 
-            <div class="card experience-card">
-                <div class="experience-header">
-                    <h2>Cloud Engineer Internship</h2>
-                    <h3>SOSHK company</h3>
-                    <p class="date">August 2022 - May 2023</p>
+    <!-- Page Header -->
+    <header class="hero-section text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Professional Experience</h1>
+            <p class="lead">My journey in cloud engineering and technology</p>
+        </div>
+    </header>
+
+    <!-- Experience Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Experience Timeline -->
+                    <div class="timeline">
+                        <!-- Job 1 - Cloud Engineer -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">June 2023 - 31 December 2024</div>
+                            <h3 class="timeline-title">Cloud Engineer</h3>
+                            <div class="timeline-company">EDNS domains</div>
+                            <h4>Cloud Support and Operations</h4>
+                            <ul class="timeline-list">
+                                <li>Provided technical support across AWS, Azure, GCP, Alibaba Cloud, Tencent Cloud and Huawei Cloud platforms</li>
+                                <li>Assisted customers with cloud service inquiries, cost estimations, and solution proposals</li>
+                                <li>Helped clients set up various cloud services including CDN, VM provisioning, and basic networking</li>
+                                <li>Monitored and maintained cloud infrastructure for client projects</li>
+                            </ul>
+                            <h4>Application Development and Infrastructure</h4>
+                            <ul class="timeline-list">
+                                <li>Developed automation scripts using Python for routine tasks</li>
+                                <li>Built and maintained Telegram bots for operational notifications</li>
+                                <li>Implemented mail services using solutions like Mail-in-a-Box</li>
+                                <li>Used AWS CDK and CloudFormation for automated resource provisioning</li>
+                                <li>Created scripts using AssumeRole for cross-account automation</li>
+                            </ul>
+                            <h4>Customer Solutions</h4>
+                            <ul class="timeline-list">
+                                <li>Provided technical consultations and cost estimates for cloud solutions</li>
+                                <li>Helped troubleshoot client issues across multiple cloud platforms</li>
+                                <li>Documented solutions and created technical guides for clients</li>
+                                <li>Assisted in cloud service implementation and configuration</li>
+                            </ul>
+                        </div>
+
+                        <!-- Job 2 - Cloud Engineer Internship -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">August 2022 - May 2023</div>
+                            <h3 class="timeline-title">Cloud Engineer Internship</h3>
+                            <div class="timeline-company">SOSHK company</div>
+                            <h4>Azure Cloud Support</h4>
+                            <ul class="timeline-list">
+                                <li>Provided technical support and troubleshooting for Azure cloud services</li>
+                                <li>Assisted in VM provisioning and basic cloud resource management</li>
+                                <li>Helped maintain cloud service documentation and user guides</li>
+                            </ul>
+                            <h4>Technical Documentation</h4>
+                            <ul class="timeline-list">
+                                <li>Created step-by-step guides for cloud service deployment procedures</li>
+                                <li>Documented common issues and their solutions for internal knowledge base</li>
+                                <li>Maintained technical documentation for team reference</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul class="experience-list">
-                    <li>
-                        <strong>Azure Cloud Support</strong>
-                        <ul>
-                            <li>Provided technical support and troubleshooting for Azure cloud services</li>
-                            <li>Assisted in VM provisioning and basic cloud resource management</li>
-                            <li>Helped maintain cloud service documentation and user guides</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Technical Documentation</strong>
-                        <ul>
-                            <li>Created step-by-step guides for cloud service deployment procedures</li>
-                            <li>Documented common issues and their solutions for internal knowledge base</li>
-                            <li>Maintained technical documentation for team reference</li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
         </div>
     </section>
 
-    <script src="../js/main.js"></script>
+    <!-- Footer -->
+    <footer class="footer py-4 text-white">
+        <div class="container text-center">
+            <p>&copy; 2025 Tony Lee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

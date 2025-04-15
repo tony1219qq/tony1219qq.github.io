@@ -3,175 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects & Achievements - Tony Lee</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f3f4f6;
-            line-height: 1.5;
-        }
-
-        nav {
-            background: white;
-            padding: 1rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-
-        h1 {
-            font-size: 1.875rem;
-            margin: 2rem 0;
-            color: #111827;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-
-        .project-card h2 {
-            font-size: 1.5rem;
-            color: #111827;
-            margin-bottom: 0.5rem;
-        }
-
-        .project-date {
-            color: #6b7280;
-            font-size: 0.875rem;
-            margin-bottom: 1rem;
-        }
-
-        .project-description {
-            color: #374151;
-            margin-bottom: 1rem;
-        }
-
-        .tag-container {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .tech-tag {
-            background: #3b82f6;
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-        }
-
-        .achievement-list {
-            list-style: none;
-        }
-
-        .achievement-list li {
-            margin-bottom: 0.5rem;
-            color: #374151;
-        }
-
-        .link {
-            color: #3b82f6;
-            text-decoration: none;
-        }
-
-        .link:hover {
-            text-decoration: underline;
-        }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-menu {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-link {
-            color: #374151;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .nav-link:hover {
-            color: #3b82f6;
-        }
-    </style>
+    <title>Projects - Tony Lee</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a href="../" class="nav-link">Tony Lee</a>
-            <ul class="nav-menu">
-                <li><a href="../" class="nav-link">Home</a></li>
-                <li><a href="experience.html" class="nav-link">Experience</a></li>
-                <li><a href="certificates.html" class="nav-link">Certifications</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-            </ul>
+            <a class="navbar-brand fw-bold" href="../index.html">Tony Lee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certificates.html">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Projects & Achievements</h1>
+    <!-- Page Header -->
+    <header class="hero-section text-white text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Projects & Achievements</h1>
+            <p class="lead">Showcasing my technical expertise and innovation</p>
+        </div>
+    </header>
 
-        <div class="project-card">
-            <h2>Final Year Project</h2>
-            <div class="project-date">2023</div>
-            <div class="project-description">
-                This project is an application that uses Live2D Cubism 4 Editor models to create interactive displays. 
-                It integrates Azure Open AI and Azure Text to Speech for additional functionality.
-            </div>
-            <div class="tag-container">
-                <span class="tech-tag">Azure Open AI</span>
-                <span class="tech-tag">Azure Text to Speech</span>
-                <span class="tech-tag">Live2D</span>
+    <!-- Projects Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Final Year Project -->
+                <div class="col-12">
+                    <div class="card shadow-sm h-100 project-card">
+                        <div class="card-body">
+                            <h3 class="project-title mb-3">Final Year Project</h3>
+                            <div class="text-muted mb-2">2023</div>
+                            <p class="card-text">This project is an application that uses Live2D Cubism 4 Editor models to create interactive displays. It integrates Azure Open AI and Azure Text to Speech for additional functionality.</p>
+                            <div>
+                                <div class="mb-3">
+                                    <span class="badge bg-primary me-1">Azure Open AI</span>
+                                    <span class="badge bg-primary me-1">Azure Text to Speech</span>
+                                    <span class="badge bg-primary me-1">Live2D</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AWS Achievements -->
+                <div class="col-12">
+                    <div class="card shadow-sm h-100 project-card">
+                        <div class="card-body">
+                            <h3 class="project-title mb-3">AWS Achievements</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">AWS Jam 2022 - top5/4thPlace (June 2022)</li>
+                                <li class="mb-2">AWS DeepRacer Championship 2022 Finalist (December 2022)</li>
+                                <li class="mb-2">AWS Deepracer League Student Champion (December 2022)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Article -->
+                <div class="col-12">
+                    <div class="card shadow-sm h-100 project-card">
+                        <div class="card-body">
+                            <h3 class="project-title mb-3">Featured Article</h3>
+                            <p class="card-text">Featured in Microsoft Tech Community Blog:<br>
+                            "How do non-degree age 19 students pass Microsoft Azure Expert Exams"</p>
+                            <a href="#" class="btn btn-outline-primary">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Certifications -->
+                <div class="col-12">
+                    <div class="card shadow-sm h-100 project-card">
+                        <div class="card-body">
+                            <h3 class="project-title mb-3">Other Certifications</h3>
+                            <div class="text-muted mb-2">2019</div>
+                            <p class="card-text">Barista Professional Certificate – SCA</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <h2>AWS Achievements</h2>
-            <ul class="achievement-list">
-                <li>AWS Jam 2022 - top5/4thPlace (June 2022)</li>
-                <li>AWS DeepRacer Championship 2022 Finalist (December 2022)</li>
-                <li>AWS Deepracer League Student Champion (December 2022)</li>
-            </ul>
+    <!-- Footer -->
+    <footer class="footer py-4 text-white">
+        <div class="container text-center">
+            <p>&copy; 2025 Tony Lee. All rights reserved.</p>
         </div>
+    </footer>
 
-        <div class="project-card">
-            <h2>Featured Article</h2>
-            <div class="project-description">
-                Featured in Microsoft Tech Community Blog:
-                <br>
-                "How do non-degree age 19 students pass Microsoft Azure Expert Exams"
-            </div>
-            <a href="https://techcommunity.microsoft.com/t5/educator-developer-blog/how-do-non-degree-age-19-students-pass-microsoft-azure-expert/ba-p/3662274" 
-               class="link" target="_blank">Read Article</a>
-        </div>
-
-        <div class="project-card">
-            <h2>Other Certifications</h2>
-            <div class="project-date">2019</div>
-            <div class="project-description">
-                Barista Professional Certificate – SCA
-            </div>
-        </div>
-    </div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
