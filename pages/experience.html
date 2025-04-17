@@ -46,6 +46,42 @@
         </div>
     </header>
 
+    <!-- Custom Timeline Styles -->
+    <style>
+        .timeline {
+            position: relative;
+            margin-left: 20px;
+            padding-left: 20px;
+            border-left: 4px solid #0d6efd;
+        }
+        .timeline-card {
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+            border-radius: 12px;
+            border: none;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -12px;
+            top: 32px;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 4px solid #0d6efd;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        @media (max-width: 576px) {
+            .timeline {
+                margin-left: 0;
+                padding-left: 0;
+                border-left: none;
+            }
+            .timeline-dot {
+                display: none;
+            }
+        }
+    </style>
     <!-- Experience Section -->
     <section class="py-5">
         <div class="container">
@@ -54,63 +90,88 @@
                     <!-- Experience Timeline -->
                     <div class="timeline">
                         <!-- Job 0 - Cloud Service Analyst -->
-                        <div class="timeline-item">
-                            <div class="timeline-date">present</div>
-                            <h3 class="timeline-title">Cloud Service Analyst</h3>
-                            <div class="timeline-company">Superhub</div>
-                            <ul class="timeline-list">
-                                <li>Provide Tier 2 support to clients via phone calls, live chat and tickets system, M365, Azure</li>
-                                <li>Record and update the status in the ticketing system</li>
-                                <li>Provide guidance and consultation to Tier 1 support</li>
-                                <li>Be responsible for installation, configuration, and maintenance of internal systems</li>
-                            </ul>
+                        <div class="card timeline-card">
+                            <div class="timeline-dot"></div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="text-primary fw-bold">present</span>
+                                    <span class="fw-semibold text-secondary">Superhub</span>
+                                </div>
+                                <h4 class="card-title mb-2 fw-bold">Cloud Service Analyst</h4>
+                                <ul class="mb-0">
+                                    <li>Provide Tier 2 support to clients via phone calls, live chat and tickets system, M365, Azure</li>
+                                    <li>Record and update the status in the ticketing system</li>
+                                    <li>Provide guidance and consultation to Tier 1 support</li>
+                                    <li>Be responsible for installation, configuration, and maintenance of internal systems</li>
+                                </ul>
+                            </div>
                         </div>
                         <!-- Job 1 - Cloud Engineer -->
-                        <div class="timeline-item">
-                            <div class="timeline-date">June 2023 - 31 December 2024</div>
-                            <h3 class="timeline-title">Cloud Engineer</h3>
-                            <div class="timeline-company">EDNS domains</div>
-                            <h4>Cloud Support and Operations</h4>
-                            <ul class="timeline-list">
-                                <li>Provided technical support across AWS, Azure, GCP, Alibaba Cloud, Tencent Cloud and Huawei Cloud platforms</li>
-                                <li>Assisted customers with cloud service inquiries, cost estimations, and solution proposals</li>
-                                <li>Helped clients set up various cloud services including CDN, VM provisioning, and basic networking</li>
-                                <li>Monitored and maintained cloud infrastructure for client projects</li>
-                            </ul>
-                            <h4>Application Development and Infrastructure</h4>
-                            <ul class="timeline-list">
-                                <li>Developed automation scripts using Python for routine tasks</li>
-                                <li>Built and maintained Telegram bots for operational notifications</li>
-                                <li>Implemented mail services using solutions like Mail-in-a-Box</li>
-                                <li>Used AWS CDK and CloudFormation for automated resource provisioning</li>
-                                <li>Created scripts using AssumeRole for cross-account automation</li>
-                            </ul>
-                            <h4>Customer Solutions</h4>
-                            <ul class="timeline-list">
-                                <li>Provided technical consultations and cost estimates for cloud solutions</li>
-                                <li>Helped troubleshoot client issues across multiple cloud platforms</li>
-                                <li>Documented solutions and created technical guides for clients</li>
-                                <li>Assisted in cloud service implementation and configuration</li>
-                            </ul>
+                        <div class="card timeline-card">
+                            <div class="timeline-dot"></div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="text-primary fw-bold">June 2023 - 31 December 2024</span>
+                                    <span class="fw-semibold text-secondary">EDNS domains</span>
+                                </div>
+                                <h4 class="card-title mb-2 fw-bold">Cloud Engineer</h4>
+                                <div class="mb-2">
+                                    <span class="fw-semibold">Cloud Support and Operations</span>
+                                    <ul>
+                                        <li>Provided technical support across AWS, Azure, GCP, Alibaba Cloud, Tencent Cloud and Huawei Cloud platforms</li>
+                                        <li>Assisted customers with cloud service inquiries, cost estimations, and solution proposals</li>
+                                        <li>Helped clients set up various cloud services including CDN, VM provisioning, and basic networking</li>
+                                        <li>Monitored and maintained cloud infrastructure for client projects</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="fw-semibold">Application Development and Infrastructure</span>
+                                    <ul>
+                                        <li>Developed automation scripts using Python for routine tasks</li>
+                                        <li>Built and maintained Telegram bots for operational notifications</li>
+                                        <li>Implemented mail services using solutions like Mail-in-a-Box</li>
+                                        <li>Used AWS CDK and CloudFormation for automated resource provisioning</li>
+                                        <li>Created scripts using AssumeRole for cross-account automation</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="fw-semibold">Customer Solutions</span>
+                                    <ul>
+                                        <li>Provided technical consultations and cost estimates for cloud solutions</li>
+                                        <li>Helped troubleshoot client issues across multiple cloud platforms</li>
+                                        <li>Documented solutions and created technical guides for clients</li>
+                                        <li>Assisted in cloud service implementation and configuration</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Job 2 - Cloud Engineer Internship -->
-                        <div class="timeline-item">
-                            <div class="timeline-date">August 2022 - May 2023</div>
-                            <h3 class="timeline-title">Cloud Engineer Internship</h3>
-                            <div class="timeline-company">SOSHK company</div>
-                            <h4>Azure Cloud Support</h4>
-                            <ul class="timeline-list">
-                                <li>Provided technical support and troubleshooting for Azure cloud services</li>
-                                <li>Assisted in VM provisioning and basic cloud resource management</li>
-                                <li>Helped maintain cloud service documentation and user guides</li>
-                            </ul>
-                            <h4>Technical Documentation</h4>
-                            <ul class="timeline-list">
-                                <li>Created step-by-step guides for cloud service deployment procedures</li>
-                                <li>Documented common issues and their solutions for internal knowledge base</li>
-                                <li>Maintained technical documentation for team reference</li>
-                            </ul>
+                        <div class="card timeline-card">
+                            <div class="timeline-dot"></div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="text-primary fw-bold">August 2022 - May 2023</span>
+                                    <span class="fw-semibold text-secondary">SOSHK company</span>
+                                </div>
+                                <h4 class="card-title mb-2 fw-bold">Cloud Engineer Internship</h4>
+                                <div class="mb-2">
+                                    <span class="fw-semibold">Azure Cloud Support</span>
+                                    <ul>
+                                        <li>Provided technical support and troubleshooting for Azure cloud services</li>
+                                        <li>Assisted in VM provisioning and basic cloud resource management</li>
+                                        <li>Helped maintain cloud service documentation and user guides</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="fw-semibold">Technical Documentation</span>
+                                    <ul>
+                                        <li>Created step-by-step guides for cloud service deployment procedures</li>
+                                        <li>Documented common issues and their solutions for internal knowledge base</li>
+                                        <li>Maintained technical documentation for team reference</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
