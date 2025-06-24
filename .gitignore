@@ -1,0 +1,9 @@
+# Ignore node_modules and build output
+node_modules/
+dist/
+build/
+.cache/
+*.log
+*.tmp
+.DS_Store
+.env

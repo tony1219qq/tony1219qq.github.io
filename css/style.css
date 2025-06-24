@@ -48,6 +48,23 @@ body {
     background: linear-gradient(to top right, var(--light-color) 49%, transparent 51%);
 }
 
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-links a {
+    font-size: 2.2rem;
+    color: var(--light-color);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
 /* Buttons */
 .btn-primary {
     background-color: var(--primary-color);
