@@ -65,6 +65,17 @@ body {
     color: var(--primary-color);
 }
 
+/* Skills & Highlights Section */
+.skills-highlights-section .card {
+    border: none; /* Ensure no border */
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.skills-highlights-section .card:hover {
+    transform: translateY(-5px);
+}
+
 /* Buttons */
 .btn-primary {
     background-color: var(--primary-color);
