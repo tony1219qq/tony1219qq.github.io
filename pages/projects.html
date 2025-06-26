@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../index.html">Tony Lee</a>
+            <a class="navbar-brand" href="../index.html">Tony Lee</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,10 +39,10 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="hero-section text-white text-center">
+    <header class="hero-section text-center text-white">
         <div class="container">
             <h1 class="display-4 fw-bold">Projects & Achievements</h1>
-            <p class="lead">Showcasing my technical expertise and innovation</p>
+            <p class="lead">Showcasing my technical expertise and innovation.</p>
         </div>
     </header>
 
@@ -50,57 +50,50 @@
     <section class="py-5">
         <div class="container">
             <div class="row g-4">
-                <!-- Final Year Project -->
-                <div class="col-12">
-                    <div class="card shadow-sm h-100 project-card">
+                <div class="col-12 fade-in">
+                    <div class="card project-card">
                         <div class="card-body">
-                            <h3 class="project-title mb-3">Final Year Project</h3>
-                            <div class="text-muted mb-2">2023</div>
-                            <p class="card-text">This project is an application that uses Live2D Cubism 4 Editor models to create interactive displays. It integrates Azure Open AI and Azure Text to Speech for additional functionality.</p>
+                            <h3 class="card-title mb-3">Final Year Project</h3>
+                            <div class="text-muted mb-3">2023</div>
+                            <p>This project is an application that uses Live2D Cubism 4 Editor models to create interactive displays. It integrates Azure Open AI and Azure Text to Speech for additional functionality.</p>
                             <div>
-                                <div class="mb-3">
-                                    <span class="badge bg-primary me-1">Azure Open AI</span>
-                                    <span class="badge bg-primary me-1">Azure Text to Speech</span>
-                                    <span class="badge bg-primary me-1">Live2D</span>
-                                </div>
+                                <span class="badge me-1">Azure Open AI</span>
+                                <span class="badge me-1">Azure Text to Speech</span>
+                                <span class="badge me-1">Live2D</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- AWS Achievements -->
-                <div class="col-12">
-                    <div class="card shadow-sm h-100 project-card">
+                <div class="col-12 fade-in">
+                    <div class="card project-card">
                         <div class="card-body">
-                            <h3 class="project-title mb-3">AWS Achievements</h3>
+                            <h3 class="card-title mb-3">AWS Achievements</h3>
                             <ul class="list-unstyled">
-                                <li class="mb-2">AWS Jam 2022 - top5/4thPlace (June 2022)</li>
-                                <li class="mb-2">AWS DeepRacer Championship 2022 Finalist (December 2022)</li>
-                                <li class="mb-2">AWS Deepracer League Student Champion (December 2022)</li>
+                                <li class="mb-2"><i class="bi bi-trophy-fill text-primary me-2"></i>AWS Jam 2022 - top5/4thPlace (June 2022)</li>
+                                <li class="mb-2"><i class="bi bi-trophy-fill text-primary me-2"></i>AWS DeepRacer Championship 2022 Finalist (December 2022)</li>
+                                <li class="mb-2"><i class="bi bi-trophy-fill text-primary me-2"></i>AWS Deepracer League Student Champion (December 2022)</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Featured Article -->
-                <div class="col-12">
-                    <div class="card shadow-sm h-100 project-card">
+                <div class="col-12 fade-in">
+                    <div class="card project-card">
                         <div class="card-body">
-                            <h3 class="project-title mb-3">Featured Article</h3>
-                            <p class="card-text">Featured in Microsoft Tech Community Blog:<br>
-                            "How do non-degree age 19 students pass Microsoft Azure Expert Exams"</p>
+                            <h3 class="card-title mb-3">Featured Article</h3>
+                            <p>Featured in Microsoft Tech Community Blog: "How do non-degree age 19 students pass Microsoft Azure Expert Exams"</p>
                             <a href="https://techcommunity.microsoft.com/blog/educatordeveloperblog/how-do-non-degree-age-19-students-pass-microsoft-azure-expert-exams-and-employer/3662274" class="btn btn-outline-primary" target="_blank" rel="noopener">Read Article</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Other Certifications -->
-                <div class="col-12">
-                    <div class="card shadow-sm h-100 project-card">
+                <div class="col-12 fade-in">
+                    <div class="card project-card">
                         <div class="card-body">
-                            <h3 class="project-title mb-3">Other Certifications</h3>
+                            <h3 class="card-title mb-3">Other Certifications</h3>
                             <div class="text-muted mb-2">2019</div>
-                            <p class="card-text">Barista Professional Certificate – SCA</p>
+                            <p>Barista Professional Certificate – SCA</p>
                         </div>
                     </div>
                 </div>
@@ -109,7 +102,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer py-4 text-white">
+    <footer class="footer text-white">
         <div class="container text-center">
             <p>&copy; 2025 Tony Lee. All rights reserved.</p>
         </div>
@@ -117,5 +110,31 @@
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Add scrolled class to navbar
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Fade in elements on scroll
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeInElements.forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>

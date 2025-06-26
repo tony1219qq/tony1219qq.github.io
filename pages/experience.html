@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../index.html">Tony Lee</a>
+            <a class="navbar-brand" href="../index.html">Tony Lee</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,136 +39,77 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="hero-section text-white text-center">
+    <header class="hero-section text-center text-white">
         <div class="container">
             <h1 class="display-4 fw-bold">Professional Experience</h1>
-            <p class="lead">My journey in cloud engineering and technology</p>
+            <p class="lead">A timeline of my journey in cloud engineering and technology.</p>
         </div>
     </header>
 
-    <!-- Custom Timeline Styles -->
-    <style>
-        .timeline {
-            position: relative;
-            margin-left: 20px;
-            padding-left: 20px;
-            border-left: 4px solid #0d6efd;
-        }
-        .timeline-card {
-            margin-bottom: 2.5rem;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.07);
-            border-radius: 12px;
-            border: none;
-        }
-        .timeline-dot {
-            position: absolute;
-            left: -12px;
-            top: 32px;
-            width: 20px;
-            height: 20px;
-            background: #fff;
-            border: 4px solid #0d6efd;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        @media (max-width: 576px) {
-            .timeline {
-                margin-left: 0;
-                padding-left: 0;
-                border-left: none;
-            }
-            .timeline-dot {
-                display: none;
-            }
-        }
-    </style>
     <!-- Experience Section -->
     <section class="py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <!-- Experience Timeline -->
+                <div class="col-lg-9">
                     <div class="timeline">
-                        <!-- Job 0 - Cloud Service Analyst -->
-                        <div class="card timeline-card">
+                        <!-- Job 0 -->
+                        <div class="timeline-card fade-in">
                             <div class="timeline-dot"></div>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="text-primary fw-bold">present</span>
-                                    <span class="fw-semibold text-secondary">Superhub</span>
-                                </div>
-                                <h4 class="card-title mb-2 fw-bold">Cloud Service Analyst</h4>
-                                <ul class="mb-0">
-                                    <li>Provide Tier 2 support to clients via phone calls, live chat and tickets system, M365, Azure</li>
-                                    <li>Record and update the status in the ticketing system</li>
-                                    <li>Provide guidance and consultation to Tier 1 support</li>
-                                    <li>Be responsible for installation, configuration, and maintenance of internal systems</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Job 1 - Cloud Engineer -->
-                        <div class="card timeline-card">
-                            <div class="timeline-dot"></div>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="text-primary fw-bold">June 2023 - 31 December 2024</span>
-                                    <span class="fw-semibold text-secondary">EDNS domains</span>
-                                </div>
-                                <h4 class="card-title mb-2 fw-bold">Cloud Engineer</h4>
-                                <div class="mb-2">
-                                    <span class="fw-semibold">Cloud Support and Operations</span>
-                                    <ul>
-                                        <li>Provided technical support across AWS, Azure, GCP, Alibaba Cloud, Tencent Cloud and Huawei Cloud platforms</li>
-                                        <li>Assisted customers with cloud service inquiries, cost estimations, and solution proposals</li>
-                                        <li>Helped clients set up various cloud services including CDN, VM provisioning, and basic networking</li>
-                                        <li>Monitored and maintained cloud infrastructure for client projects</li>
-                                    </ul>
-                                </div>
-                                <div class="mb-2">
-                                    <span class="fw-semibold">Application Development and Infrastructure</span>
-                                    <ul>
-                                        <li>Developed automation scripts using Python for routine tasks</li>
-                                        <li>Built and maintained Telegram bots for operational notifications</li>
-                                        <li>Implemented mail services using solutions like Mail-in-a-Box</li>
-                                        <li>Used AWS CDK and CloudFormation for automated resource provisioning</li>
-                                        <li>Created scripts using AssumeRole for cross-account automation</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <span class="fw-semibold">Customer Solutions</span>
-                                    <ul>
-                                        <li>Provided technical consultations and cost estimates for cloud solutions</li>
-                                        <li>Helped troubleshoot client issues across multiple cloud platforms</li>
-                                        <li>Documented solutions and created technical guides for clients</li>
-                                        <li>Assisted in cloud service implementation and configuration</li>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="card-title mb-0">Cloud Service Analyst</h4>
+                                        <span class="badge bg-primary">Present</span>
+                                    </div>
+                                    <div class="text-muted mb-3">Superhub</div>
+                                    <ul class="mb-0">
+                                        <li>Provide Tier 2 support for M365 and Azure via calls, chat, and tickets.</li>
+                                        <li>Manage and update ticketing system records.</li>
+                                        <li>Guide and consult Tier 1 support on advanced issues.</li>
+                                        <li>Install, configure, and maintain internal systems.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Job 2 - Cloud Engineer Internship -->
-                        <div class="card timeline-card">
+                        <!-- Job 1 -->
+                        <div class="timeline-card fade-in">
                             <div class="timeline-dot"></div>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="text-primary fw-bold">August 2022 - May 2023</span>
-                                    <span class="fw-semibold text-secondary">SOSHK company</span>
-                                </div>
-                                <h4 class="card-title mb-2 fw-bold">Cloud Engineer Internship</h4>
-                                <div class="mb-2">
-                                    <span class="fw-semibold">Azure Cloud Support</span>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="card-title mb-0">Cloud Engineer</h4>
+                                        <span class="text-muted">June 2023 - Dec 2024</span>
+                                    </div>
+                                    <div class="text-muted mb-3">EDNS Domains</div>
+                                    <p class="fw-semibold text-light">Cloud Support & Operations:</p>
                                     <ul>
-                                        <li>Provided technical support and troubleshooting for Azure cloud services</li>
-                                        <li>Assisted in VM provisioning and basic cloud resource management</li>
-                                        <li>Helped maintain cloud service documentation and user guides</li>
+                                        <li>Provided multi-cloud support (AWS, Azure, GCP, etc.).</li>
+                                        <li>Assisted with service inquiries, cost estimates, and proposals.</li>
+                                        <li>Helped clients with CDN, VM provisioning, and networking.</li>
+                                    </ul>
+                                    <p class="fw-semibold text-light">Application Development & Infra:</p>
+                                    <ul>
+                                        <li>Developed Python automation scripts for routine tasks.</li>
+                                        <li>Built and maintained Telegram bots for notifications.</li>
+                                        <li>Provisioned resources with AWS CDK and CloudFormation.</li>
                                     </ul>
                                 </div>
-                                <div>
-                                    <span class="fw-semibold">Technical Documentation</span>
-                                    <ul>
-                                        <li>Created step-by-step guides for cloud service deployment procedures</li>
-                                        <li>Documented common issues and their solutions for internal knowledge base</li>
-                                        <li>Maintained technical documentation for team reference</li>
+                            </div>
+                        </div>
+                        <!-- Job 2 -->
+                        <div class="timeline-card fade-in">
+                            <div class="timeline-dot"></div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="card-title mb-0">Cloud Engineer Internship</h4>
+                                        <span class="text-muted">Aug 2022 - May 2023</span>
+                                    </div>
+                                    <div class="text-muted mb-3">SOSHK Company</div>
+                                    <ul class="mb-0">
+                                        <li>Provided technical support and troubleshooting for Azure.</li>
+                                        <li>Assisted in VM provisioning and resource management.</li>
+                                        <li>Created and maintained technical documentation.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -180,7 +121,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer py-4 text-white">
+    <footer class="footer text-white">
         <div class="container text-center">
             <p>&copy; 2025 Tony Lee. All rights reserved.</p>
         </div>
@@ -188,5 +129,31 @@
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Add scrolled class to navbar
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Fade in elements on scroll
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeInElements.forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
