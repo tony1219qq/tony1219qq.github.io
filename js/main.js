@@ -43,16 +43,9 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Fade in elements on scroll
-const fadeInElements = document.querySelectorAll('.fade-in');
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.1 });
-
-fadeInElements.forEach(el => {
-    observer.observe(el);
+// Initialize AOS
+AOS.init({
+    duration: 800,
+    once: true,
+    easing: 'ease-in-out',
 });
