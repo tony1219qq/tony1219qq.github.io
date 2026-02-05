@@ -7,3 +7,10 @@ build/
 *.tmp
 .DS_Store
 .env
+
+# IDE and editor folders
+.cursor/
+.gemini/
+.kiro/
+.vscode/
+.idea/
