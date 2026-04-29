@@ -5,36 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Tony Lee</title>
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">Tony Lee</a>
+            <a class="navbar-brand" href="../index.html">TONY LEE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="experience.html">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="certificates.html">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certificates.html">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                 </ul>
                 <button id="theme-switcher" class="btn theme-toggle ms-lg-3" type="button">
                     <i class="bi bi-sun-fill"></i>
@@ -44,41 +32,44 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
     <header class="hero-section text-center text-white">
         <div class="container">
-            <h1 class="display-4 fw-bold">Professional Experience</h1>
-            <p class="lead">A timeline of my journey in cloud engineering and technology.</p>
+            <div class="hero-shell reveal">
+                <span class="hero-badge"><i class="bi bi-kanban"></i> Career Timeline</span>
+                <h1 class="display-4 fw-bold">Professional Experience</h1>
+                <p class="lead hero-subtitle">Progressive growth across cloud operations, platform support, and
+                    reliability engineering.</p>
+            </div>
         </div>
     </header>
 
-    <!-- Experience Section -->
     <section class="py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="timeline">
-                        <!-- Job 0 -->
-                        <div class="timeline-card" data-aos="fade-up">
+                        <div class="timeline-card reveal">
                             <div class="timeline-dot"></div>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <h4 class="card-title mb-0">Cloud Engineer</h4>
-                                        <span class="badge bg-success">Jul 2025 - Present</span>
+                                        <span class="badge bg-primary">Aug 2025 - Present</span>
                                     </div>
-                                    <div class="text-muted mb-3">YesStyle</div>
-                                    <p class="fw-semibold text-light">Monitor & Optimize | Deliver & Support:</p>
+                                    <div class="text-muted mb-3">Yesstyle</div>
                                     <ul class="mb-0">
-                                        <li>Monitor IT systems to ensure continuous health and proactively identify issues.</li>
-                                        <li>Support IT teams by completing assigned tasks and assisting team members.</li>
-                                        <li>Manage AWS CloudWatch alarms, consistently updating and creating alarms to meet requirements.</li>
+                                        <li>Manage AWS EC2 infrastructure and troubleshoot network/security incidents at
+                                            platform level.</li>
+                                        <li>Implement and tune CloudWatch alarms with actionable thresholds and response
+                                            playbooks.</li>
+                                        <li>Contribute to repeatable incident response and stability improvements for
+                                            production workloads.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- Job 1 -->
-                        <div class="timeline-card" data-aos="fade-up">
+
+                        <div class="timeline-card reveal">
                             <div class="timeline-dot"></div>
                             <div class="card">
                                 <div class="card-body">
@@ -88,53 +79,52 @@
                                     </div>
                                     <div class="text-muted mb-3">Superhub</div>
                                     <ul class="mb-0">
-                                        <li>Provide Tier 2 support for M365 and Azure via calls, chat, and tickets.</li>
-                                        <li>Manage and update ticketing system records.</li>
-                                        <li>Guide and consult Tier 1 support on advanced issues.</li>
-                                        <li>Install, configure, and maintain internal systems.</li>
+                                        <li>Provided Tier-2 support for Microsoft 365 and Azure through ticket and live
+                                            channels.</li>
+                                        <li>Maintained service records and triage workflows to reduce repeated incident
+                                            noise.</li>
+                                        <li>Mentored Tier-1 agents on escalation patterns and root-cause diagnostics.
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- Job 2 -->
-                        <div class="timeline-card" data-aos="fade-up" data-aos-delay="100">
+
+                        <div class="timeline-card reveal">
                             <div class="timeline-dot"></div>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <h4 class="card-title mb-0">Cloud Engineer</h4>
-                                        <span class="badge bg-primary">June 2023 - Dec 2024</span>
+                                        <span class="badge bg-primary">Jun 2023 - Dec 2024</span>
                                     </div>
                                     <div class="text-muted mb-3">EDNS Domains</div>
-                                    <p class="fw-semibold text-light">Cloud Support & Operations:</p>
                                     <ul>
-                                        <li>Provided multi-cloud support (AWS, Azure, GCP, etc.).</li>
-                                        <li>Assisted with service inquiries, cost estimates, and proposals.</li>
-                                        <li>Helped clients with CDN, VM provisioning, and networking.</li>
-                                    </ul>
-                                    <p class="fw-semibold text-light">Application Development & Infra:</p>
-                                    <ul>
-                                        <li>Developed Python automation scripts for routine tasks.</li>
-                                        <li>Built and maintained Telegram bots for notifications.</li>
-                                        <li>Provisioned resources with AWS CDK and CloudFormation.</li>
+                                        <li>Delivered multi-cloud support (AWS / Azure / GCP) for SMEs and enterprise
+                                            customers.</li>
+                                        <li>Built Python automation scripts and notification bots for recurring
+                                            operations tasks.</li>
+                                        <li>Provisioned infrastructure through AWS CDK and CloudFormation with reusable
+                                            templates.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- Job 3 -->
-                        <div class="timeline-card" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="timeline-card reveal">
                             <div class="timeline-dot"></div>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
-                                        <h4 class="card-title mb-0">Cloud Engineer Internship</h4>
+                                        <h4 class="card-title mb-0">Cloud Engineer Intern</h4>
                                         <span class="badge bg-primary">Aug 2022 - May 2023</span>
                                     </div>
                                     <div class="text-muted mb-3">SOSHK Company</div>
                                     <ul class="mb-0">
-                                        <li>Provided technical support and troubleshooting for Azure.</li>
-                                        <li>Assisted in VM provisioning and resource management.</li>
-                                        <li>Created and maintained technical documentation.</li>
+                                        <li>Supported Azure VM provisioning, account setup, and baseline operational
+                                            checks.</li>
+                                        <li>Produced technical documentation to reduce onboarding friction for support
+                                            workflows.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -145,18 +135,13 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer text-white">
         <div class="container text-center">
-            <p>&copy; 2025 Tony Lee. All rights reserved.</p>
+            <p>&copy; 2026 Tony Lee. Built for clarity and momentum.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- Custom JS -->
     <script src="../js/main.js"></script>
 </body>
 
